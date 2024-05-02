@@ -10,18 +10,17 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-
 const MianPage = () => {
   return (
     <>
     
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font w-full">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="lg:text-6xl font-bold tracking-wider bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
               Robin Singh Choudhary
             </h1>
-            <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
+            <p className="mt-4 lg:text-3xl text-slate-700 capitalize tracking-wide">
               Front-End Developer
             </p>
             <p className="mt-2 text-lg text-slate-700 capitalize tracking-wide">
@@ -45,8 +44,11 @@ const MianPage = () => {
                 <a href="tel:+8847263059"> +91-8847263059</a>
               </p>
             </div>
+            <div className="flex items-center">
+            Email : <p className=" text-lg text-slate-700 capitalize tracking-wide"> choudharyrobin882@gmail.com</p>
+            </div>
             <div className="flex gap-x-4 mt-4">
-              <a href="https://github.com/aligbakhtiyar">
+              <a href="#">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -80,10 +82,13 @@ const MianPage = () => {
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
               className="object-cover object-center rounded w-full"
+              // lg:h-[520px] h-[260px]
+              style={{mixBlendMode:"color-burn"}}
               alt="hero"
               sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
               loading="lazy"
               src="./images/hero-01dff752.svg"
+              //src="./images/robin.jpeg"
               width={100}
               height={100}
             />
@@ -98,7 +103,7 @@ const MianPage = () => {
             <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
               MY SKILLS
             </h2>
-            <p className="w-full leading-relaxed text-gray-500">
+            <p className=" lg:text-center w-full leading-relaxed text-gray-500">
               As a front-end developer, I excel in crafting dynamic and
               responsive web experiences. My skills encompass a range of
               technologies including HTML, Bootstrap, Tailwind CSS, React.js,
@@ -187,9 +192,9 @@ const MianPage = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font" id="work">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
+      <section className="text-gray-600 body-font" id="experience">
+        <div className="container px-5 py-24 mx-auto">
+          <h2 className="text-center items-center sm:text-3xl text-2xl  font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
             EXPERIENCE WORK EXPERIENCE
           </h2>
           <div className="flex flex-wrap w-full">
@@ -348,9 +353,9 @@ const MianPage = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font w-full" id="EDUCATION">
+      <section className="text-gray-600 body-font w-full" id="education">
         <div className="container px-5 py-24 mx-auto">
-          <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
+          <h2 className="text-center sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
             EDUCATION
           </h2>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
@@ -561,6 +566,7 @@ const MianPage = () => {
           </div>
         </div>
       </section>
+
 
     </>
   );

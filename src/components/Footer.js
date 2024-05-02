@@ -1,5 +1,5 @@
 "use client";
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect, useRef } from 'react'
 
 const Footer = () => {
     const [currentYear, setCurrentYear] = useState('');
@@ -10,6 +10,26 @@ const Footer = () => {
         };
         getYear();
     }, []);
+
+
+    const [position, setPosition] = React.useState({ top: 0, left: 0 })
+    React.useEffect(() => {
+      window.scroll({
+        top: position.top,
+        left: position.left,
+        behavior: 'smooth'
+      })
+    })
+  
+  
+    const scrollTop = useRef(null);
+    useEffect(() => {
+      window.addEventListener('scroll', (e) => {
+        window.scrollY > 300
+          ? scrollTop.current.style.display = 'flex'
+          : scrollTop.current.style.display = 'none'
+      })
+    })
 
   return (
     <footer className="text-gray-600 body-font">
@@ -86,6 +106,12 @@ const Footer = () => {
       </a>
     </span>
   </div>
+<span
+onClick={() => setPosition({ ...position, position: { top: 0, left: 0 } })} className="circle fixed right-[6rem] bottom-12 bg-white text-gray-700 hover:bg-custom-gradient hover:text-white text-lg z-50 w-[40px] h-[40px] rounded-full flex items-center justify-center cursor-pointer shadow-md transition-all duration-300  " ref={scrollTop}>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-[20px]">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+</svg>
+</span>
 </footer>
 
   )
