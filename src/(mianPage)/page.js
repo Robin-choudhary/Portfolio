@@ -14,6 +14,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 const MianPage = () => {
   return (
     <>
+    
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -41,7 +42,7 @@ const MianPage = () => {
                 <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" />
               </svg>
               <p className="mt-2 text-lg text-slate-700 capitalize tracking-wide">
-              <a href="tel:+8847263059"> +91-8847263059</a>
+                <a href="tel:+8847263059"> +91-8847263059</a>
               </p>
             </div>
             <div className="flex gap-x-4 mt-4">
@@ -78,13 +79,13 @@ const MianPage = () => {
 
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
-            width={100}
-            height={100}
-              className="object-cover object-center rounded"
+              className="object-cover object-center rounded w-full"
               alt="hero"
               sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
               loading="lazy"
               src="./images/hero-01dff752.svg"
+              width={100}
+              height={100}
             />
           </div>
         </div>
@@ -92,71 +93,101 @@ const MianPage = () => {
 
       <section className="text-gray-600 body-font w-full" id="skills">
         <div className="container px-5 py-24 mx-auto">
-
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
             <small> MY SPECIALTY</small>
             <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
               MY SKILLS
             </h2>
             <p className="w-full leading-relaxed text-gray-500">
-            As a front-end developer, I excel in crafting dynamic and responsive web experiences. My skills encompass a range of technologies including HTML, Bootstrap, Tailwind CSS, React.js, and jQuery. I specialize in translating creative concepts into engaging and interactive interfaces. With expertise in modern front-end frameworks and libraries, I am passionate about building intuitive and user-friendly applications that bring ideas to life on the web.
+              As a front-end developer, I excel in crafting dynamic and
+              responsive web experiences. My skills encompass a range of
+              technologies including HTML, Bootstrap, Tailwind CSS, React.js,
+              and jQuery. I specialize in translating creative concepts into
+              engaging and interactive interfaces. With expertise in modern
+              front-end frameworks and libraries, I am passionate about building
+              intuitive and user-friendly applications that bring ideas to life
+              on the web.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>HTML</h3>
-                <ProgressBar completed={85} bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" />
+                <ProgressBar
+                  completed={85}
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>CSS</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={80}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={80}
+                />
               </div>
             </div>
 
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>Bootstrap</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={70}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={70}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>TailwindCss</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={70}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={70}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>Reactjs</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={75}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={75}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>Nextjs</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={60}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={60}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>Jquery</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={60}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={60}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="progress-wrap">
                 <h3>Javascript</h3>
-                <ProgressBar bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)" completed={60}  />
+                <ProgressBar
+                  bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
+                  completed={60}
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font" id="work">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
             EXPERIENCE WORK EXPERIENCE
@@ -317,7 +348,7 @@ const MianPage = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font w-full">
+      <section className="text-gray-600 body-font w-full" id="EDUCATION">
         <div className="container px-5 py-24 mx-auto">
           <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
             EDUCATION
@@ -389,7 +420,9 @@ const MianPage = () => {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="object-cover object-center rounded"
+              width={100}
+              height={100}
+              className="object-cover object-center rounded w-full h-auto"
               alt="hero"
               src="./images/about-03f57d6e.svg"
               sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
@@ -402,7 +435,15 @@ const MianPage = () => {
               WHO AM I?
             </h1>
             <p>
-            I m Robin Singh Choudhary, a dedicated front-end developer passionate about creating engaging and user-friendly web experiences. I specialize in crafting intuitive interfaces using HTML, CSS (including frameworks like Bootstrap and Tailwind CSS), and JavaScript libraries such as React.js and jQuery. With a keen eye for design and a focus on interactivity, I transform ideas into functional and visually appealing websites. My goal is to leverage technology to enhance user interactions and deliver impactful digital solutions.
+              I m Robin Singh Choudhary, a dedicated front-end developer
+              passionate about creating engaging and user-friendly web
+              experiences. I specialize in crafting intuitive interfaces using
+              HTML, CSS (including frameworks like Bootstrap and Tailwind CSS),
+              and JavaScript libraries such as React.js and jQuery. With a keen
+              eye for design and a focus on interactivity, I transform ideas
+              into functional and visually appealing websites. My goal is to
+              leverage technology to enhance user interactions and deliver
+              impactful digital solutions.
             </p>
           </div>
         </div>
@@ -413,22 +454,21 @@ const MianPage = () => {
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              RECENT WORK
+                RECENT WORK
               </h1>
               <div className="h-1 w-20 bg-indigo-500 rounded" />
             </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
               Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
               gentrify, subway tile poke farm-to-table. Franzen you probably
-              have not heard of them man bun deep jianbing selfies heirloom prism
-              food truck ugh squid celiac humblebrag.
+              have not heard of them man bun deep jianbing selfies heirloom
+              prism food truck ugh squid celiac humblebrag.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <Image
-
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/720x400"
                   alt="content"
@@ -501,8 +541,8 @@ const MianPage = () => {
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/723x403"
                   alt="content"
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
                   loading="lazy"
                 />
@@ -521,6 +561,7 @@ const MianPage = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };
