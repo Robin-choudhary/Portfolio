@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        <main className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <main className="lex flex-wrap flex-col md:flex-row items-center">
         {children}
         </main>
         <Footer/>

@@ -13,8 +13,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 const MianPage = () => {
   return (
     <>
-    
-      <section className="text-gray-600 body-font w-full">
+      <section className="text-gray-600 body-font w-full bg-[#f9f9ff]">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="lg:text-6xl font-bold tracking-wider bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
@@ -45,7 +44,11 @@ const MianPage = () => {
               </p>
             </div>
             <div className="flex items-center">
-            Email : <p className=" text-lg text-slate-700 capitalize tracking-wide"> choudharyrobin882@gmail.com</p>
+              Email :{" "}
+              <p className=" text-lg text-slate-700 capitalize tracking-wide">
+                {" "}
+                choudharyrobin882@gmail.com
+              </p>
             </div>
             <div className="flex gap-x-4 mt-4">
               <a href="#">
@@ -79,7 +82,7 @@ const MianPage = () => {
             </div>
           </div>
 
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
               className="object-cover object-center rounded w-full"
               // lg:h-[520px] h-[260px]
@@ -92,7 +95,7 @@ const MianPage = () => {
               width={100}
               height={100}
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -217,9 +220,10 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    Full Stack Developer 2017-2018
+                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
+                    Full Stack Developer
                   </h2>
+                  <small className="text-sm">2022-Present</small>
                   <p className="leading-relaxed">
                     Full Stack Developer with 2 years of experience in the IT
                     sector is a versatile professional capable of contributing
@@ -249,9 +253,10 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
                     Front End Developer at Lovely Professional University (LPU)
                   </h2>
+                  <small className="text-sm">2022-Present</small>
                   <p className="leading-relaxed">
                     Front End Developer at Lovely Professional University (LPU),
                     you play a key role in designing and implementing
@@ -282,9 +287,10 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    Creative Designer 2017-2018
+                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
+                    Creative Designer
                   </h2>
+                  <small className="text-sm">2022-2022 Nov</small>
                   <p className="leading-relaxed">
                     Creative Designer, you are instrumental in conceptualizing
                     and producing visually captivating designs across various
@@ -314,12 +320,27 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                    UI/UX Designer at Envato 2017-2018
+                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
+                    WEB Designer Internship at webcooks
                   </h2>
+                  <small className="text-sm">2021</small>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    As a Web Designer Intern at Webcooks, you will work closely
+                    with our experienced design team to bring concepts to life
+                    and contribute to the development of engaging and responsive
+                    websites. This internship offers valuable insights into the
+                    design process, from initial ideation to final
+                    implementation. <br/>
+                   <strong> Key Responsibilities: </strong>
+                    <br/>
+                    <ul>
+                      <li> Collaborate with the design team to create wireframes, prototypes, and visual designs.</li>
+                    </ul>
+               <li>Assist in front-end development tasks using HTML, CSS, and JavaScript.</li>
+               <li>Optimize web assets for performance and responsiveness.</li>
+               <li>Contribute to brainstorming sessions and offer creative ideas for web projects.</li>
+               <li>Support the design team in maintaining and updating existing websites.</li>
+            
                   </p>
                 </div>
               </div>
@@ -339,7 +360,7 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
                     FINISH
                   </h2>
                   <p className="leading-relaxed">
@@ -353,7 +374,10 @@ const MianPage = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font w-full" id="education">
+      <section
+        className="text-gray-600 body-font w-full bg-[#f9f9ff]"
+        id="education"
+      >
         <div className="container px-5 py-24 mx-auto">
           <h2 className="text-center sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
             EDUCATION
@@ -454,7 +478,7 @@ const MianPage = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font" id="project">
+      <section className="text-gray-600 body-font bg-[#f9f9ff]" id="project">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -566,8 +590,6 @@ const MianPage = () => {
           </div>
         </div>
       </section>
-
-
     </>
   );
 };
