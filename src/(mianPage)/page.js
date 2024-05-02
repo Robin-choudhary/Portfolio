@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
-
+import Image from "next/image";
 import {
   Accordion,
   AccordionItem,
@@ -77,9 +77,13 @@ const MianPage = () => {
           </div>
 
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
+            <Image
+            width={100}
+            height={100}
               className="object-cover object-center rounded"
               alt="hero"
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
               src="./images/hero-01dff752.svg"
             />
           </div>
@@ -363,7 +367,7 @@ const MianPage = () => {
                   <p>
                     High School Secondary Education from DAV (Dayanand Anglo
                     Vedic) schools in Punjab, India, represents a crucial phase
-                    in a student's academic journey, providing a strong
+                    in a student s academic journey, providing a strong
                     educational foundation and holistic development. DAV schools
                     are renowned for their commitment to academic excellence and
                     character-building. The High School Secondary Education
@@ -384,10 +388,12 @@ const MianPage = () => {
       <section className="text-gray-600 body-font" id="about">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
+            <Image
               className="object-cover object-center rounded"
               alt="hero"
               src="./images/about-03f57d6e.svg"
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -396,7 +402,7 @@ const MianPage = () => {
               WHO AM I?
             </h1>
             <p>
-            I'm Robin Singh Choudhary, a dedicated front-end developer passionate about creating engaging and user-friendly web experiences. I specialize in crafting intuitive interfaces using HTML, CSS (including frameworks like Bootstrap and Tailwind CSS), and JavaScript libraries such as React.js and jQuery. With a keen eye for design and a focus on interactivity, I transform ideas into functional and visually appealing websites. My goal is to leverage technology to enhance user interactions and deliver impactful digital solutions.
+            I m Robin Singh Choudhary, a dedicated front-end developer passionate about creating engaging and user-friendly web experiences. I specialize in crafting intuitive interfaces using HTML, CSS (including frameworks like Bootstrap and Tailwind CSS), and JavaScript libraries such as React.js and jQuery. With a keen eye for design and a focus on interactivity, I transform ideas into functional and visually appealing websites. My goal is to leverage technology to enhance user interactions and deliver impactful digital solutions.
             </p>
           </div>
         </div>
@@ -414,17 +420,22 @@ const MianPage = () => {
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
               Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
               gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom prism
+              have not heard of them man bun deep jianbing selfies heirloom prism
               food truck ugh squid celiac humblebrag.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
-                <img
+                <Image
+
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/720x400"
                   alt="content"
+                  width={100}
+                  height={100}
+                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+                  loading="lazy"
                 />
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   SUBTITLE
@@ -440,10 +451,14 @@ const MianPage = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
-                <img
+                <Image
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/721x401"
                   alt="content"
+                  width={100}
+                  height={100}
+                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+                  loading="lazy"
                 />
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   SUBTITLE
@@ -459,10 +474,14 @@ const MianPage = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
-                <img
+                <Image
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/722x402"
                   alt="content"
+                  width={100}
+                  height={100}
+                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+                  loading="lazy"
                 />
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   SUBTITLE
@@ -478,10 +497,14 @@ const MianPage = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
-                <img
+                <Image
                   className="h-40 rounded w-full object-cover object-center mb-6"
                   src="https://dummyimage.com/723x403"
                   alt="content"
+                  width={100}
+                  height={100}
+                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+                  loading="lazy"
                 />
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   SUBTITLE
