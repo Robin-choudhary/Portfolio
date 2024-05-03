@@ -102,7 +102,6 @@ const MianPage = () => {
       <section className="text-gray-600 body-font w-full" id="skills">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <small> MY SPECIALTY</small>
             <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
               MY SKILLS
             </h2>
@@ -198,7 +197,7 @@ const MianPage = () => {
       <section className="text-gray-600 body-font" id="experience">
         <div className="container px-5 py-24 mx-auto">
           <h2 className="text-center items-center sm:text-3xl text-2xl  font-medium title-font mb-2 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
-            EXPERIENCE WORK EXPERIENCE
+          WORK EXPERIENCE
           </h2>
           <div className="flex flex-wrap w-full">
             <div className="w-full md:pr-10 md:py-6">
@@ -512,7 +511,7 @@ const MianPage = () => {
       <section className="text-gray-600 body-font bg-[#f9f9ff]" id="project">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 bg-gradient-to-r from-[#8490ff] to-[#62bdfc] bg-clip-text text-transparent">
               Web Creations
             </h1>
             <p className="w-full mx-auto leading-relaxed text-base">
