@@ -160,7 +160,7 @@ const MianPage = () => {
                 <h3>Reactjs</h3>
                 <ProgressBar
                   bgColor="linear-gradient(0deg, #8490ff 0%, #62bdfc 100%)"
-                  completed={75}
+                  completed={70}
                 />
               </div>
             </div>
@@ -223,7 +223,7 @@ const MianPage = () => {
                   <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
                     Full Stack Developer
                   </h2>
-                  <small className="text-sm">2022-Present</small>
+                  <small className="text-sm">Nov/2022 - Present <span className="bg-custom-gradient text-white p-1"><i>Jalandhar</i></span></small>
                   <p className="leading-relaxed">
                     Full Stack Developer with 2 years of experience in the IT
                     sector is a versatile professional capable of contributing
@@ -256,7 +256,7 @@ const MianPage = () => {
                   <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
                     Front End Developer at Lovely Professional University (LPU)
                   </h2>
-                  <small className="text-sm">2022-Present</small>
+                  <small className="text-sm">Nov/2022 - Present <span className="bg-custom-gradient text-white p-1"><i>Jalandhar</i></span></small>
                   <p className="leading-relaxed">
                     Front End Developer at Lovely Professional University (LPU),
                     you play a key role in designing and implementing
@@ -288,17 +288,40 @@ const MianPage = () => {
                 </div>
                 <div className="flex-grow pl-4">
                   <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
-                    Creative Designer
+                  Wordpress Developer at Kochartech
                   </h2>
-                  <small className="text-sm">2022-2022 Nov</small>
-                  <p className="leading-relaxed">
-                    Creative Designer, you are instrumental in conceptualizing
-                    and producing visually captivating designs across various
-                    mediums, ranging from digital platforms to print materials.
-                    Your role involves translating ideas into compelling visual
-                    representations that resonate with target audiences and
-                    convey brand messages effectively.
-                  </p>
+                  <small className="text-sm">Jan/2022 - Nov/2022 <span className="bg-custom-gradient text-white p-1"><i>Amritsar</i></span></small>
+                  <div className="leading-relaxed">
+                    As a Web Designer Intern at Webcooks, you will work closely
+                    with our experienced design team to bring concepts to life
+                    and contribute to the development of engaging and responsive
+                    websites. This internship offers valuable insights into the
+                    design process, from initial ideation to final
+                    implementation. <br />
+                    <strong> Key Responsibilities: </strong>
+                    <br />
+                    <ul>
+                      <li>
+                        Collaborate with the design team to create wireframes,
+                        prototypes, and visual designs.
+                      </li>
+                    </ul>
+                    <li>
+                      Assist in front-end development tasks using HTML, CSS, and
+                      JavaScript.
+                    </li>
+                    <li>
+                      Optimize web assets for performance and responsiveness.
+                    </li>
+                    <li>
+                      Contribute to brainstorming sessions and offer creative
+                      ideas for web projects.
+                    </li>
+                    <li>
+                      Support the design team in maintaining and updating
+                      existing websites.
+                    </li>
+                  </div>
                 </div>
               </div>
               <div className="flex relative pb-12">
@@ -320,28 +343,42 @@ const MianPage = () => {
                   </svg>
                 </div>
                 <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
                     WEB Designer Internship at webcooks
                   </h2>
-                  <small className="text-sm">2021</small>
-                  <p className="leading-relaxed">
+                  <small className="text-sm">Sep/2021 - Jan/2022 <span className="bg-custom-gradient text-white p-1"><i>Amritsar</i></span></small>
+                  <div className="leading-relaxed">
                     As a Web Designer Intern at Webcooks, you will work closely
                     with our experienced design team to bring concepts to life
                     and contribute to the development of engaging and responsive
                     websites. This internship offers valuable insights into the
                     design process, from initial ideation to final
-                    implementation. <br/>
-                   <strong> Key Responsibilities: </strong>
-                    <br/>
+                    implementation. <br />
+                    <strong> Key Responsibilities: </strong>
+                    <br />
                     <ul>
-                      <li> Collaborate with the design team to create wireframes, prototypes, and visual designs.</li>
+                      <li>
+                        {" "}
+                        Collaborate with the design team to create wireframes,
+                        prototypes, and visual designs.
+                      </li>
                     </ul>
-               <li>Assist in front-end development tasks using HTML, CSS, and JavaScript.</li>
-               <li>Optimize web assets for performance and responsiveness.</li>
-               <li>Contribute to brainstorming sessions and offer creative ideas for web projects.</li>
-               <li>Support the design team in maintaining and updating existing websites.</li>
-            
-                  </p>
+                    <li>
+                      Assist in front-end development tasks using HTML, CSS, and
+                      JavaScript.
+                    </li>
+                    <li>
+                      Optimize web assets for performance and responsiveness.
+                    </li>
+                    <li>
+                      Contribute to brainstorming sessions and offer creative
+                      ideas for web projects.
+                    </li>
+                    <li>
+                      Support the design team in maintaining and updating
+                      existing websites.
+                    </li>
+                  </div>
                 </div>
               </div>
               <div className="flex relative">
@@ -359,15 +396,7 @@ const MianPage = () => {
                     <path d="M22 4L12 14.01l-3-3" />
                   </svg>
                 </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font  text-gray-900 mb-1 tracking-wider">
-                    FINISH
-                  </h2>
-                  <p className="leading-relaxed">
-                    Pitchfork ugh tattooed scenester echo park gastropub
-                    whatever cold-pressed retro.
-                  </p>
-                </div>
+               {/* text remove from here */}
               </div>
             </div>
           </div>
@@ -454,9 +483,11 @@ const MianPage = () => {
               className="object-cover object-center rounded w-full h-auto"
               alt="hero"
               src="./images/about-03f57d6e.svg"
+              //src="./images/robin.jpeg"
               sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
               loading="lazy"
             />
+             
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h6>ABOUT US</h6>
@@ -480,111 +511,177 @@ const MianPage = () => {
 
       <section className="text-gray-600 body-font bg-[#f9f9ff]" id="project">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                RECENT WORK
-              </h1>
-              <div className="h-1 w-20 bg-indigo-500 rounded" />
-            </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              have not heard of them man bun deep jianbing selfies heirloom
-              prism food truck ugh squid celiac humblebrag.
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              Web Creations
+            </h1>
+            <p className="w-full mx-auto leading-relaxed text-base">
+              I have experience developing dynamic and responsive frontend
+              projects using a combination of HTML, CSS, and JavaScript. From
+              e-commerce websites with interactive product catalogs and checkout
+              systems to weather applications that display real-time forecasts
+              based on location, my projects reflect a strong focus on user
+              experience and interface design.
+                I will also built task management
+              dashboards with drag-and-drop functionality and personalized
+              portfolio websites showcasing my skills and projects. Each project
+              demonstrates my ability to create intuitive, visually appealing
+              interfaces optimized for different devices and screen sizes.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
                 <Image
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/720x400"
-                  alt="content"
-                  width={100}
-                  height={100}
-                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
-                  loading="lazy"
+                width={100}
+              height={100}
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/600x360"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Chichen Itza
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    Nextjs
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                   Portfolio
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
                 <Image
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/721x401"
-                  alt="content"
-                  width={100}
-                  height={100}
-                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
-                  loading="lazy"
+                width={100}
+              height={100}
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/601x361"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Colosseum Roma
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Catalyzer
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
                 <Image
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/722x402"
-                  alt="content"
-                  width={100}
-                  height={100}
-                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
-                  loading="lazy"
+                width={100}
+              height={100}
+              
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/603x363"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Great Pyramid of Giza
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    The 400 Blows
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
                 <Image
-                  className="h-40 rounded w-full object-cover object-center mb-6"
-                  src="https://dummyimage.com/723x403"
-                  alt="content"
-                  width={200}
-                  height={200}
-                  sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
-                  loading="lazy"
+                width={100}
+              height={100}
+              
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/602x362"
                 />
-                <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                  SUBTITLE
-                </h3>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  San Francisco
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
-                </p>
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Neptune
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <Image
+                width={100}
+              height={100}
+              
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/605x365"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Holden Caulfield
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <Image
+                width={100}
+              height={100}
+              
+              sizes="(max-width:768px) 100vw, (max-width:120px) 50vw, 33vw"
+              loading="lazy"
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="https://dummyimage.com/606x366"
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Alper Kamu
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
